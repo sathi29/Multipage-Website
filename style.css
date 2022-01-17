@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #666;
+    padding: 1rem;
+}
+#menu{
+    font-size: 2.5rem;
+    color: #666;
+    margin: 1rem;
+    display: none;
+
+}
+.navbar ul{
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem;
+}
+.navbar ul li{
+    margin: 0 1.5rem;
+}
+.navbar ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.navbar ul li a:hover{
+    color: #666;
+}
+
+/*section home css*/
+
+section{
+    padding: 0 1.5rem;
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 2rem 5.5rem;
+}
+.home .image{
+    height: 20%;
+}
+
+.home .content{
+    font-size: 2.2rem;
+    color: #444;
+    padding : 0;
+}
+.home .content p{
+    font-size: 1.2rem;
+    color: #666;
+    padding: 1rem 3rem 0 0;
+}
+
+.btn{
+    font-size: 1.2rem;
+    background: orange;
+    padding: .5rem 3rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+/* hover is not done */
+.btn:hover{    
+    color: #666;
+}
+
+
+/* about section css */
+.about{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.about .image{
+    height: 20%;
+}
+
+.about .content{
+    font-size: 2.2rem;
+    color: #444;
+    padding-left: 3rem;
+}
+.about .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+
+/* service section css */
+
+.service{
+    min-height: 100vh;
+    background: #eee;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.service .box-container .box{
+    background: #fff;
+    margin: 2rem;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 .3rem rgb(0 , 0 , 0 ,.3);
+}
+
+.service .box-container .box i{
+    font-size: 2rem;
+    color: orange;
+    padding: 1rem;
+}
+
+.service .box-container .box h3{
+    font-size: 1.8rem;
+    color: #444;
+    
+}
+.service .box-container .box p{
+    font-size: 1.2rem;
+    color: #666;
+    padding: 1rem;
+}
+
+/* plan section css */
+
+.plan{
+    min-height: 100vh;
+    background: #eee;
+    padding: 6rem 3rem;
+}
+.plan .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem ;
+}
+.plan .box-container .box{
+    background: #fff;
+    margin: 2rem;
+    padding: 3rem 2rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 .3rem rgb(0 , 0 , 0 ,.3);
+}
+
+.plan .box-container .box .title{
+    color: #444;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.plan .box-container .box .price{
+    background: orange;
+    color: #fff;
+    border-radius: 50%;
+    margin: 1rem auto;
+    height: 13rem;
+    width: 13rem;
+    text-align: center;
+    line-height: 13rem;
+    font-size: 2rem;
+}
+.plan .box-container .box ul li{
+    color: #666;
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+/* contact section css */
+.contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    margin: 1rem;
+    margin-top: 4rem;
+    box-shadow: 0 0 .5rem rgb(0 , 0 , 0 ,.3);
+}
+.contact .content{
+    flex: 1 1 40rem;
+    padding: 3rem 1rem;
+}
+
+.contact form .box{
+    width: 100%;
+    color: #333;
+    height: 4rem;
+    font-size: 1.2rem;
+    border: hidden;
+    border-bottom: .2rem solid rgb(0 , 0 , 0 ,.3);
+    text-transform: none;
+    margin: 1rem 0;
+}
+
+.contact form .box::placeholder{
+    text-transform: capitalize;
+    font-size:large;
+    color: #333;
+}
+
+.contact form .message{
+    height: 10rem;
+    resize: none;
+}
+.contact .content h3{
+    color: #333;
+    font-size: 3rem;
+}
+.contact .content p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.contact .content .icon{
+    font-size: 1rem;
+    color: #444;
+    padding: .7rem 0;
+}
+.contact .content .icon i{
+    padding-right: .5rem;
+    color: orange;
+}
+
+/* footer section css */
+.footer{
+    background-color: #333;
+    text-align: center;
+}
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer .box-container .box{
+    margin: 2rem;
+    flex: 1 1 20rem;
+}
+.footer .box-container .box h3{
+    font-size: 1.8rem;
+    color: #fff;
+}
+.footer .box-container .box p{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    font-size: 1.2rem;
+    color: #eee;
+    padding: .2rem 0;
+    display: block;
+}
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+    color: #666;
+}
+.footer .box-container .box input[type= "email"]{
+    height: 2.8rem;
+    width: 35%;
+    font-size: 1rem;
+    padding:0 1rem;
+}
+
+.footer .box-container form .btn:hover{
+    color:#333;
+    background:#ccc;
+}
+
+
+
